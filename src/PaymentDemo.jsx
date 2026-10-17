@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-export default function PaymentDemo({ active, frozen, onFreeze, onHome, onTool, onSupport }) {
+export default function PaymentDemo({ onSkip, active, frozen, onFreeze, onHome, onTool, onSupport }) {
   const [step, setStep] = useState('edit');
   const [name, setName] = useState('Taylor Reed');
   const [amount, setAmount] = useState('1250');
@@ -33,7 +33,7 @@ export default function PaymentDemo({ active, frozen, onFreeze, onHome, onTool, 
     setInvitation(false); setChat(true);
     if (!messages.length) setMessages([{ who: 'assistant', text: scenario === 'flagged' ? 'I can help you take a second look. This demo flagged a new recipient and an amount above your usual range. That does not mean it is a scam. Is someone guiding you through this payment on a call or in messages?' : 'You asked for a second look. No risk flag was raised in this routine demo scenario. Is someone guiding you through this payment on a call or in messages?' }]);
   }
-  function dismiss() { setInvitation(false); setDismissed(true); setChat(false); }
+  function dismiss() { if (!dismissed && scenario === 'flagged') onSkip?.(reasons); setInvitation(false); setDismissed(true); setChat(false); }
   function answer(text) {
     if (!text.trim()) return;
     const value = text.trim();
