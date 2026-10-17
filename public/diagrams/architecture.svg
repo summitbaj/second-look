@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1260" viewBox="0 0 1200 1260" role="img" aria-labelledby="title desc"><title id="title">Second Look integration architecture</title><desc id="desc">An existing banking app embeds the widget. Backend ML and bank policy control risk decisions; an LLM explains without payment authority.</desc><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="#5a819a"/></marker></defs><rect width="100%" height="100%" fill="#f2f8fb"/><style>text{font-family:Arial,sans-serif;fill:#102552}.label{font-size:15px}.heading{font-size:19px;font-weight:bold}.sub{font-size:14px;fill:#506178}.line{fill:none;stroke:#5a819a;stroke-width:2;marker-end:url(#arrow)}</style>
+<text x="40" y="48" font-size="28" font-weight="bold">Second Look integration architecture</text>
+<text x="40" y="77" class="sub">Proposed production design · Current prototype uses local, simulated services</text>
+<rect x="40" y="115" width="540" height="125" rx="12" fill="#e3f0f7" stroke="#b8cfde"/>
+<text x="58" y="145" class="heading">Existing Sound app / payment flow</text>
+<text x="58" y="172" class="label">Member session + payment intent</text>
+<text x="58" y="195" class="label">Owns payment confirmation and account screens</text>
+<rect x="620" y="115" width="540" height="125" rx="12" fill="#e3f0f7" stroke="#b8cfde"/>
+<text x="638" y="145" class="heading">Second Look widget</text>
+<text x="638" y="172" class="label">React component or isolated web view</text>
+<text x="638" y="195" class="label">Reason codes, chat, education and support tools</text>
+<path class="line" d="M580 170H620"/>
+<rect x="290" y="300" width="620" height="110" rx="12" fill="#102552" stroke="#b8cfde"/>
+<text x="308" y="330" class="heading" style="fill:white">Bank API gateway + session broker</text>
+<text x="308" y="357" class="label" style="fill:white">Member-scoped short-lived session; staff RBAC; rate limits</text>
+<text x="308" y="380" class="label" style="fill:white">Only necessary context crosses the widget boundary</text>
+<path class="line" d="M310 240V270H420V300"/>
+<path class="line" d="M890 240V270H780V300"/>
+<rect x="40" y="475" width="350" height="145" rx="12" fill="#ffffff" stroke="#b8cfde"/>
+<text x="58" y="505" class="heading">Risk features + ML inference</text>
+<text x="58" y="532" class="label">Authorized event history only</text>
+<text x="58" y="555" class="label">Score, reason codes, model version</text>
+<text x="58" y="578" class="label">Monitor drift and false positives</text>
+<rect x="425" y="475" width="350" height="145" rx="12" fill="#fff1c7" stroke="#b8cfde"/>
+<text x="443" y="505" class="heading">Bank policy engine</text>
+<text x="443" y="532" class="label">Validate evidence + model health</text>
+<text x="443" y="555" class="label">Apply bank-approved action limits</text>
+<text x="443" y="578" class="label">Create decision and review record</text>
+<rect x="810" y="475" width="350" height="145" rx="12" fill="#ffffff" stroke="#b8cfde"/>
+<text x="828" y="505" class="heading">Conversation service + LLM</text>
+<text x="828" y="532" class="label">Explain approved reason codes</text>
+<text x="828" y="555" class="label">Grounded educational content</text>
+<text x="828" y="578" class="label">No direct bank-action credentials</text>
+<path class="line" d="M420 410V440H215V475"/>
+<path class="line" d="M600 410V475"/>
+<path class="line" d="M780 410V440H985V475"/>
+<path class="line" d="M390 545H425"/>
+<path class="line" d="M775 545H810"/>
+<rect x="40" y="700" width="350" height="150" rx="12" fill="#ffffff" stroke="#b8cfde"/>
+<text x="58" y="730" class="heading">Low / no concern</text>
+<text x="58" y="757" class="label">Host continues normal review</text>
+<text x="58" y="780" class="label">Optional member-initiated help</text>
+<text x="58" y="803" class="label">No automatic chat interruption</text>
+<rect x="425" y="700" width="350" height="150" rx="12" fill="#ffffff" stroke="#b8cfde"/>
+<text x="443" y="730" class="heading">Concern / uncertain</text>
+<text x="443" y="757" class="label">Offer explanation and optional chat</text>
+<text x="443" y="780" class="label">Member may decline assistance</text>
+<text x="443" y="803" class="label">Skipped flag enters review queue</text>
+<rect x="810" y="700" width="350" height="150" rx="12" fill="#fff1c7" stroke="#b8cfde"/>
+<text x="828" y="730" class="heading">Critical + corroborated evidence</text>
+<text x="828" y="757" class="label">Policy requests temporary hold</text>
+<text x="828" y="780" class="label">Bank adapter enforces before send</text>
+<text x="828" y="803" class="label">Expiry + notice + employee review</text>
+<path class="line" d="M600 620V655H215V700"/>
+<path class="line" d="M600 620V700"/>
+<path class="line" d="M600 620V655H985V700"/>
+<rect x="40" y="940" width="350" height="145" rx="12" fill="#ffffff" stroke="#b8cfde"/>
+<text x="58" y="970" class="heading">Consent-based support</text>
+<text x="58" y="997" class="label">Trusted-contact channel enrollment</text>
+<text x="58" y="1020" class="label">Independent callback / agent route</text>
+<text x="58" y="1043" class="label">Minimal, approved message context</text>
+<rect x="425" y="940" width="350" height="145" rx="12" fill="#ffffff" stroke="#b8cfde"/>
+<text x="443" y="970" class="heading">Case service + employee portal</text>
+<text x="443" y="997" class="label">Assignment and escalation</text>
+<text x="443" y="1020" class="label">Appeal and legitimate-case release</text>
+<text x="443" y="1043" class="label">Callback, notes and audit trail</text>
+<rect x="810" y="940" width="350" height="145" rx="12" fill="#ffffff" stroke="#b8cfde"/>
+<text x="828" y="970" class="heading">Bank payment / account adapter</text>
+<text x="828" y="997" class="label">Idempotent, authorized hold/release</text>
+<text x="828" y="1020" class="label">Server-side enforcement and TTL</text>
+<text x="828" y="1043" class="label">Voluntary freeze + recovery flow</text>
+<path class="line" d="M600 850V895H215V940"/>
+<path class="line" d="M600 850V940"/>
+<path class="line" d="M985 850V940"/>
+<path class="line" d="M810 1010H775"/>
+<rect x="40" y="1130" width="1120" height="83" rx="10" fill="#102552"/>
+<text x="60" y="1160" font-size="17" style="fill:white">Across services: audit events · encryption · retention limits · consent · model monitoring · rollback</text>
+<text x="60" y="1188" font-size="15" style="fill:white">A closed chat never releases a bank hold. Only authorized policy or employee review can release it.</text>
+</svg>

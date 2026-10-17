@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="970" viewBox="0 0 1200 970" role="img" aria-labelledby="title desc"><title id="title">Second Look mind map</title><desc id="desc">Member control, widget, ML, policy, support and pilot branches surround Second Look.</desc><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="#5a819a"/></marker></defs><rect width="100%" height="100%" fill="#f2f8fb"/><style>text{font-family:Arial,sans-serif;fill:#102552}.label{font-size:15px}.heading{font-size:19px;font-weight:bold}.sub{font-size:14px;fill:#506178}.line{fill:none;stroke:#5a819a;stroke-width:2;marker-end:url(#arrow)}</style>
+<text x="40" y="48" font-size="28" font-weight="bold">Second Look mind map</text>
+<text x="40" y="77" class="sub">Proposed production design · Current prototype uses local, simulated services</text>
+<rect x="415" y="370" width="370" height="140" rx="12" fill="#102552" stroke="#b8cfde"/>
+<text x="433" y="400" class="heading" style="fill:white">SECOND LOOK</text>
+<text x="433" y="427" class="label" style="fill:white">A second opinion before money moves</text>
+<text x="433" y="450" class="label" style="fill:white">An embeddable banking assistant</text>
+<rect x="40" y="125" width="340" height="170" rx="12" fill="#ffffff" stroke="#b8cfde"/>
+<text x="58" y="155" class="heading">Member experience</text>
+<text x="58" y="182" class="label">Optional, dismissible chat</text>
+<text x="58" y="205" class="label">Plain-language flag explanations</text>
+<text x="58" y="228" class="label">Fraud/scam education and exit words</text>
+<text x="58" y="251" class="label">Large controls and accessible text</text>
+<rect x="420" y="110" width="360" height="170" rx="12" fill="#ffffff" stroke="#b8cfde"/>
+<text x="438" y="140" class="heading">Existing Sound app</text>
+<text x="438" y="167" class="label">Launch within payment review</text>
+<text x="438" y="190" class="label">Keep payment details in host app</text>
+<text x="438" y="213" class="label">Authenticated widget session</text>
+<text x="438" y="236" class="label">Return to pending payment</text>
+<rect x="820" y="125" width="340" height="170" rx="12" fill="#ffffff" stroke="#b8cfde"/>
+<text x="838" y="155" class="heading">ML risk signals</text>
+<text x="838" y="182" class="label">New recipient and payment history</text>
+<text x="838" y="205" class="label">Profile changes and password resets</text>
+<text x="838" y="228" class="label">Calibrated score + reason codes</text>
+<text x="838" y="251" class="label">No private call/message surveillance</text>
+<rect x="40" y="615" width="340" height="190" rx="12" fill="#ffffff" stroke="#b8cfde"/>
+<text x="58" y="645" class="heading">Member-controlled tools</text>
+<text x="58" y="672" class="label">Trusted contact with consent</text>
+<text x="58" y="695" class="label">No financial details in message</text>
+<text x="58" y="718" class="label">Independent bank contact route</text>
+<text x="58" y="741" class="label">Voluntary outgoing-payment freeze</text>
+<text x="58" y="764" class="label">Clear recovery steps</text>
+<rect x="420" y="665" width="360" height="190" rx="12" fill="#ffffff" stroke="#b8cfde"/>
+<text x="438" y="695" class="heading">Employee review</text>
+<text x="438" y="722" class="label">Flagged / skipped-chat queue</text>
+<text x="438" y="745" class="label">Assignment, callback, escalation</text>
+<text x="438" y="768" class="label">Legitimate-case review and appeal</text>
+<text x="438" y="791" class="label">Action history and resolution notes</text>
+<text x="438" y="814" class="label">Consent-limited contact information</text>
+<rect x="820" y="615" width="340" height="190" rx="12" fill="#ffffff" stroke="#b8cfde"/>
+<text x="838" y="645" class="heading">Policy and pilot</text>
+<text x="838" y="672" class="label">Model advises; bank policy acts</text>
+<text x="838" y="695" class="label">Reversible, time-limited holds</text>
+<text x="838" y="718" class="label">No LLM payment permissions</text>
+<text x="838" y="741" class="label">Shadow mode before enforcement</text>
+<text x="838" y="764" class="label">Measure false positives and workload</text>
+<path class="line" d="M460 370L300 295"/>
+<path class="line" d="M600 370V280"/>
+<path class="line" d="M740 370L940 295"/>
+<path class="line" d="M460 510L260 615"/>
+<path class="line" d="M600 510V665"/>
+<path class="line" d="M740 510L950 615"/>
+<text x="40" y="925" class="sub">Build one scam journey, one legitimate look-alike, and one missed-scam recovery path using synthetic data.</text>
+</svg>
